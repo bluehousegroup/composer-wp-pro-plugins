@@ -252,7 +252,12 @@ class Installer implements PluginInterface, EventSubscriberInterface {
 			case 'bluehousegroup/wp-all-export-pro':
 				$plugin = new Plugins\WpAiPro( $package->getPrettyVersion(), str_replace( 'bluehousegroup/', '', $package_name ) );
 				break;
-
+			case 'bluehousegroup/events-calendar-pro':
+			case 'bluehousegroup/event-tickets-plus':
+			case 'bluehousegroup/tribe-filterbar':
+			case 'bluehousegroup/events-virtual':
+					$plugin = new Plugins\EventsCalendar( $package->getPrettyVersion(), str_replace( 'bluehousegroup/', '', $package_name ) );
+					break;
 			default:
 				if ( 0 === strpos( $package_name, 'bluehousegroup/gravityforms' ) ) {
 					$plugin = new Plugins\GravityForms( $package->getPrettyVersion(), str_replace( 'bluehousegroup/', '', $package_name ) );

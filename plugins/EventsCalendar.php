@@ -7,12 +7,10 @@
 
 namespace BluehouseGroup\Composer\WPProPlugins\Plugins;
 
-use BluehouseGroup\Composer\WPProPlugins\Http;
-
 /**
  * GravityForms class.
  */
-class GravityForms {
+class EventsCalendar {
 
 	/**
 	 * The version number of the plugin to download.
@@ -34,7 +32,7 @@ class GravityForms {
 	 * @param string $version
 	 * @param string $slug
 	 */
-	public function __construct( $version = '', $slug = 'gravityforms' ) {
+	public function __construct( $version = '', $slug = 'events-calendar-pro' ) {
 		$this->version = $version;
 		$this->slug    = $slug;
 	}
@@ -45,12 +43,8 @@ class GravityForms {
 	 * @return string
 	 */
 	public function getDownloadUrl() {
-		$http     = new Http();
-		$response = unserialize( $http->post( 'https://www.gravityhelp.com/wp-content/plugins/gravitymanager/api.php?op=get_plugin&slug=' . $this->slug . '&key=' . getenv( 'GRAVITY_FORMS_KEY' ) ) );
-		if ( ! empty( $response['download_url_latest'] ) ) {
-			return str_replace( 'http://', 'https://', $response['download_url_latest'] );
-		}
-		return '';
+		$key = strtoupper(preg_replace('/-/', '_', $this->slug)) . '_KEY';
+		return 'https://pue.tri.be/api/plugins/v2/download?plugin=' . $this->slug . '&version=' . $this->version . '&key=' . getenv( $key );
 	}
 
 }
