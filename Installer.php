@@ -240,24 +240,24 @@ class Installer implements PluginInterface, EventSubscriberInterface {
 		$package_name = $package->getName();
 
 		switch ( $package_name ) {
-			case 'junaidbhura/advanced-custom-fields-pro':
+			case 'bluehousegroup/advanced-custom-fields-pro':
 				$plugin = new Plugins\AcfPro( $package->getPrettyVersion() );
 				break;
 
-			case 'junaidbhura/polylang-pro':
+			case 'bluehousegroup/polylang-pro':
 				$plugin = new Plugins\PolylangPro( $package->getPrettyVersion() );
 				break;
 
-			case 'junaidbhura/wp-all-import-pro':
-			case 'junaidbhura/wp-all-export-pro':
-				$plugin = new Plugins\WpAiPro( $package->getPrettyVersion(), str_replace( 'junaidbhura/', '', $package_name ) );
+			case 'bluehousegroup/wp-all-import-pro':
+			case 'bluehousegroup/wp-all-export-pro':
+				$plugin = new Plugins\WpAiPro( $package->getPrettyVersion(), str_replace( 'bluehousegroup/', '', $package_name ) );
 				break;
 
 			default:
-				if ( 0 === strpos( $package_name, 'junaidbhura/gravityforms' ) ) {
-					$plugin = new Plugins\GravityForms( $package->getPrettyVersion(), str_replace( 'junaidbhura/', '', $package_name ) );
-				} elseif ( 0 === strpos( $package_name, 'junaidbhura/wpai-' ) ) {
-					$plugin = new Plugins\WpAiPro( $package->getPrettyVersion(), str_replace( 'junaidbhura/', '', $package_name ) );
+				if ( 0 === strpos( $package_name, 'bluehousegroup/gravityforms' ) ) {
+					$plugin = new Plugins\GravityForms( $package->getPrettyVersion(), str_replace( 'bluehousegroup/', '', $package_name ) );
+				} elseif ( 0 === strpos( $package_name, 'bluehousegroup/wpai-' ) ) {
+					$plugin = new Plugins\WpAiPro( $package->getPrettyVersion(), str_replace( 'bluehousegroup/', '', $package_name ) );
 				}
 		}
 
