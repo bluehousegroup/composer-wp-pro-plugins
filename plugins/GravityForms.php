@@ -8,7 +8,7 @@
 namespace BluehouseGroup\Composer\WPProPlugins\Plugins;
 
 use BluehouseGroup\Composer\WPProPlugins\Http;
-die();
+
 /**
  * GravityForms class.
  */
