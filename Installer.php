@@ -2,10 +2,10 @@
 /**
  * Composer Installer for Pro WordPress Plugins.
  *
- * @package Junaidbhura\Composer\WPProPlugins
+ * @package BluehouseGroup\Composer\WPProPlugins
  */
 
-namespace Junaidbhura\Composer\WPProPlugins;
+namespace BluehouseGroup\Composer\WPProPlugins;
 
 use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;

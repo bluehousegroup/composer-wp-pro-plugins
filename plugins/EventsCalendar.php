@@ -1,6 +1,6 @@
 <?php
 /**
- * Gravity Forms Plugin.
+ * EventsCalendar Plugin.
  *
  * @package BluehouseGroup\Composer\WPProPlugins\Plugins
  */

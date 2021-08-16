@@ -2,12 +2,12 @@
 /**
  * WP All Import / Export Pro Plugin.
  *
- * @package Junaidbhura\Composer\WPProPlugins\Plugins
+ * @package BluehouseGroup\Composer\WPProPlugins\Plugins
  */
 
-namespace Junaidbhura\Composer\WPProPlugins\Plugins;
+namespace BluehouseGroup\Composer\WPProPlugins\Plugins;
 
-use Junaidbhura\Composer\WPProPlugins\Http;
+use BluehouseGroup\Composer\WPProPlugins\Http;
 
 /**
  * WpAiPro class.

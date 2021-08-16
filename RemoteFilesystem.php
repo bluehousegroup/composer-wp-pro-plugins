@@ -2,10 +2,10 @@
 /**
  * Custom RemoteFilesystem.
  *
- * @package Junaidbhura\Composer\WPProPlugins
+ * @package BluehouseGroup\Composer\WPProPlugins
  */
 
-namespace Junaidbhura\Composer\WPProPlugins;
+namespace BluehouseGroup\Composer\WPProPlugins;
 
 use Composer\Config;
 use Composer\IO\IOInterface;

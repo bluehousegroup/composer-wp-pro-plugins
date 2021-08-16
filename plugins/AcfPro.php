@@ -2,10 +2,10 @@
 /**
  * ACF Pro Plugin.
  *
- * @package Junaidbhura\Composer\WPProPlugins\Plugins
+ * @package BluehouseGroup\Composer\WPProPlugins\Plugins
  */
 
-namespace Junaidbhura\Composer\WPProPlugins\Plugins;
+namespace BluehouseGroup\Composer\WPProPlugins\Plugins;
 
 /**
  * AcfPro class.

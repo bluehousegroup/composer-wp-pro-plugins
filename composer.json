@@ -14,12 +14,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "Junaidbhura\\Composer\\WPProPlugins\\": "",
-      "Junaidbhura\\Composer\\WPProPlugins\\Plugins\\": "plugins"
+      "BluehouseGroup\\Composer\\WPProPlugins\\": "",
+      "BluehouseGroup\\Composer\\WPProPlugins\\Plugins\\": "plugins"
     }
   },
   "extra": {
-    "class": "Junaidbhura\\Composer\\WPProPlugins\\Installer",
+    "class": "BluehouseGroup\\Composer\\WPProPlugins\\Installer",
     "plugin-modifies-downloads": true
   }
 }
