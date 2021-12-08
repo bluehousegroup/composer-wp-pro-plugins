@@ -178,7 +178,7 @@ Here's a list of all Gravity Forms add-on slugs: [https://docs.gravityforms.com/
 
 ### WP All Import Pro Add-Ons
 
-You can use any WP All Import Pro add-on by simply adding it's slug like so:
+You can use any WP All Import Pro add-on by simply adding its slug like so:
 
 `bluehousegroup/<plugin-slug>`
 
